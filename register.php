@@ -1,8 +1,10 @@
 <?php 
 
+	include("includes/config.php");
 	include("includes/classes/Account.php");
 	include("includes/classes/Constants.php");
-	$account = new Account();
+
+	$account = new Account($con);
 
 	include("includes/handlers/register-handler.php");
 	include("includes/handlers/login-handler.php");
@@ -19,7 +21,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Welcome to OMSP!</title>
+	<title>OMSP || Registration</title>
 </head>
 
 <body>
@@ -27,6 +29,7 @@
 		<form id="loginForm" action="register.php" method="POST">
 			<h2>Login to your Account</h2>
 			<p>
+				<?php echo $account -> getError(Constants::$loginFailed) ?>
 				<label for="loginUserName">User Name: </label>
 				<input id="loginUserName" type="text" name="loginUserName" placeholder="Your User Name" required>
 			</p>
@@ -41,6 +44,7 @@
 			<h2>Create Your Free Account</h2>
 			<p>
 				<?php echo $account -> getError(Constants::$userNameCharacters) ?>
+				<?php echo $account -> getError(Constants::$userNameTaken) ?>
 				<label for="userName">User Name: </label>
 				<input id="userName" type="text" name="userName" placeholder="User Name" value="<?php getInputValue('userName') ?>" required>
 			</p>
@@ -57,6 +61,7 @@
 			<p>
 				<?php echo $account -> getError(Constants::$emailsDoNotMatch) ?>
 				<?php echo $account -> getError(Constants::$emailInvalid) ?>
+				<?php echo $account -> getError(Constants::$emailTaken) ?>
 				<label for="email">Email: </label>
 				<input id="email" type="email" name="email" placeholder="Email Address" value="<?php getInputValue('email') ?>" required>
 			</p>
