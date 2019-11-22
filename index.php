@@ -1,5 +1,4 @@
 <?php
-
 	include("includes/config.php");
 	//session_destroy(); for logout
 
@@ -9,7 +8,6 @@
 	else{
 		header("Location: register.php");
 	}
-
  ?>
 
 
