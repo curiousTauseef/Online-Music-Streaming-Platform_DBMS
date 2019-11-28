@@ -4,6 +4,11 @@ html, body {
 	height: 100%;
 }
 
+* {
+	font-family: "Helvetica Nueue", "Helvetica", "Arial", sans-serif;
+	color: #fff;
+}
+
 #playingBarContainer {
 	width: 100%;
 	min-width: 620px;
@@ -26,6 +31,11 @@ html, body {
 	min-width: 180px;
 }
 
+#playingBarRight {
+	position: relative;
+	margin-top: 16px;
+}
+
 #playingBarCenter {
 	width: 40%;
 	max-width: 700px;
@@ -36,6 +46,7 @@ html, body {
 
 #playingBar .content {
 	width: 100%;
+	height: 57px;
 }
 
 .playerControls .buttons {
@@ -98,4 +109,101 @@ html, body {
 
 .playBackBar .progressBar {
 	margin-top: 3px;
+}
+
+#playingBarLeft .albumArtwork {
+	height: 100%;
+	max-width: 57px;
+	margin-right: 15px;
+	float: left;
+	background-size: cover;
+}
+
+#playingBarLeft .trackInfo {
+	display: table;
+}
+
+#playingBarLeft .trackInfo .trackName {
+	margin: 6px 0;
+	display: inline-block;
+	width: 100%;
+}
+
+#playingBarLeft .trackInfo .artistName span {
+	font-size: 12px;
+	color: #a0a0a0;
+}
+
+.volumeBar {
+	width: 180px;
+	position: absolute;
+	right: 0;
+}
+
+.volumeBar .progressBar {
+	width: 125px;
+	display: inline-block;
+}
+
+#topContainer {
+	min-height: 100%;
+	width: 100%;
+}
+
+#navBarContainer {
+	background-color: #000;
+	width: 220px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+}
+
+.navBar {
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	margin-bottom: 15px;
+}
+
+.logo img {
+	width: 100%; 
+}
+
+.navBar {
+	text-align: center;
+}
+
+.navBar .group {
+	padding: 10px 0;
+	border-top: 1px solid #a0a0a0;
+}
+
+.navItem {
+	padding: 10px 0;
+	font-size: 14px;
+	font-weight: 700;
+	display: block;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.navItemLink {
+	color: #a0a0a0;
+	text-decoration: none;
+}
+
+.navItemLink:hover {
+	color: #ffffff;
+}
+
+.navItemLink .search-icon {
+	position: absolute;
+	right: 0;
+	top: 6px;
+	width: 25px;
 }
