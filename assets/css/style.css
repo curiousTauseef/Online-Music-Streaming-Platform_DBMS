@@ -156,7 +156,7 @@ body {
 	min-height: 100%;
 	width: 100%;
 }
-
+/* Nav Bar */
 #navBarContainer {
 	background-color: #000;
 	width: 220px;
@@ -285,7 +285,7 @@ body {
 	color: #939393;
 	font-weight: 200;
 }
-
+/* Track List */
 .trackList {
 	padding: 0;
 }
