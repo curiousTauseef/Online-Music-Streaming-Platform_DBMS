@@ -7,6 +7,13 @@ html, body {
 * {
 	font-family: "Helvetica Nueue", "Helvetica", "Arial", sans-serif;
 	color: #fff;
+	letter-spacing: 1px;
+}
+
+body {
+	background-color: #181818;
+	font-size: 14px;
+	min-width: 720px;
 }
 
 #playingBarContainer {
@@ -206,4 +213,157 @@ html, body {
 	right: 0;
 	top: 6px;
 	width: 25px;
+}
+
+#mainViewContainer {
+	margin-left: 220px;
+	padding-bottom: 90px;
+	width: calc(100%-220px);
+}
+
+#mainContent {
+	padding: 0 20px;
+}
+
+.pageHeadingBig {
+	padding: 20px;
+	text-align: center;
+}
+
+.gridViewItem {
+	display: inline-block;
+	margin-right: 20px;
+	width: 29%;
+	max-width: 200px;
+	min-width: 150px;
+	text-align: center;
+
+}
+
+.gridViewItem img {
+	width: 100%;
+}
+
+.gridViewItem a {
+	text-decoration: none;
+}
+
+.gridViewContainer {
+	text-align: center;
+}
+
+.entityInfo {
+	padding: 40px 0 10px 0;
+	width: 100%;
+	display: inline-block;
+}
+
+.entityInfo .leftSection {
+	width: 30%;
+	float: left;
+	max-width: 250px;
+
+}
+
+.entityInfo .leftSection img {
+	width: 100%;
+}
+
+.entityInfo .rightSection {
+	width: 70%;
+	float: right;
+	/*padding: 5px 10px 5px 40px;*/
+	padding: 7px 0 0 0;
+	box-sizing: border-box;
+}
+
+.entityInfo .rightSection h2 {
+	margin-top: 0;
+}
+
+.entityInfo .rightSection p {
+	color: #939393;
+	font-weight: 200;
+}
+
+.trackList {
+	padding: 0;
+}
+
+.trackListRow {
+	height: 40px;
+	padding: 15px 10px;
+	list-style: none;
+}
+
+.trackListRow:hover {
+    background-color: #282828;
+}
+
+.trackListRow .trackCount {
+    width: 8%;
+    float: left;
+}
+
+.trackListRow .trackCount img {
+    width: 20px;
+    visibility: hidden;
+    position: absolute;
+    cursor: pointer;
+}
+
+.trackListRow:hover .trackCount img {
+    visibility: visible;
+}
+
+.trackListRow .trackCount span {
+    visibility: visible;
+}
+
+.trackListRow:hover .trackCount span {
+    visibility: hidden;
+}
+
+.trackListRow .trackInfo {
+	width: 75%;
+	float: left;
+}
+
+.trackListRow .trackInfo span {
+	display: block;
+}
+
+.trackListRow .trackOptions {
+	width: 5%;
+	text-align: left;
+	float: left;
+}
+
+.trackListRow .trackOptions img {
+	width: 15px;
+	visibility: hidden;
+}
+
+.trackListRow:hover .trackOptions img {
+	visibility: visible;
+	cursor: pointer;
+}
+
+.trackListRow .trackDuration {
+	width: 12%;
+	float: left;
+	text-align: right;
+}
+
+.trackListRow .trackDuration span {
+	color: #939393;
+}
+
+.trackListRow .trackInfo .trackName {
+	margin-bottom: 7px;
+	color: #ffffff;
+}
+
+.trackListRow .trackInfo .artistName {
+	color: #939393;
 }
