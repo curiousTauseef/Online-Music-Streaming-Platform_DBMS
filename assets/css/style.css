@@ -15,7 +15,7 @@ body {
 	font-size: 14px;
 	min-width: 720px;
 }
-
+/* Playing Bar */
 #playingBarContainer {
 	width: 100%;
 	min-width: 620px;
